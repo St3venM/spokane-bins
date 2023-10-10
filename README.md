@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# spokane-bins
-=======
+
 # spokane-bins
 
 ## Project setup

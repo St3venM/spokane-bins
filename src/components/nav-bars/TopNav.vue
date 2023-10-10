@@ -1,9 +1,9 @@
-<template>
+<template class="container">
     <header class="header">
         <img 
             class="logo"
             alt="Spokane Bins logo" 
-            src="@\assets\images\logos\spokane-bins-official-logo.png"
+            src="@\assets\images\logos\nav-logo-no-bg-white.png"
         />   
         <nav>
             <ul class="nav-links">
@@ -33,21 +33,23 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
     .header {
-        
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         background: var(--black);
         color: var(--white);
-        max-height: 50px;
+        max-height: 90px;
+        width: auto;
+        padding: 5px;
 
         .logo {
             object-fit: contain;
-            max-width: 10%;
-            max-height: 10%;
+            max-width: 7%;
+        }
+        .logo:hover {
+            cursor: pointer;
         }
         
         nav {

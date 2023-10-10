@@ -1,7 +1,10 @@
 <template>
-  <TopNav></TopNav>
-  <HomePage></HomePage>
-  <BottomNav></BottomNav>
+  <div>
+    <TopNav class="top-nav"></TopNav>
+    <HomePage></HomePage>
+    <BottomNav></BottomNav>
+  </div>
+  
 </template>
 
 <script>
@@ -20,8 +23,7 @@ export default {
 </script>
 
 <style>
-  .logo {
-    max-width: 50%;
-    max-height: 50%;
+  .top-nav {
+    /* position: fixed; */
   }
 </style>

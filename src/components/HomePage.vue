@@ -1,19 +1,20 @@
 <template>
   <div class="background-image">
     <div class="logo-container">
-      <SpokaneBinsLogo class="logo"/>
+      <img 
+            class="logo"
+            alt="Spokane Bins logo" 
+            src="@\assets\images\logos\logo-no-bg.png"
+        />
     </div>
   </div>
 </template>
 
 <script>
-import SpokaneBinsLogo from '@/components/shared/SpokaneBinsLogo.vue'
 
 export default {
   name: 'HomePage',
-  components: {
-    SpokaneBinsLogo,
-  },
+  components: {},
   props: {},
   data() {
     return {
@@ -38,6 +39,7 @@ export default {
       align-items: center;
       justify-content: center;
     }
+  
   }
 
 

@@ -1,0 +1,23 @@
+:root {
+    --dim-gray: rgb(109, 103, 110);
+    --french-gray: rgb(175, 171, 176);
+
+    --orange: #FAA916;
+    --white: #FBFFFE;
+    --black: black;
+    --black-hover: #3D3D3D;
+  }
+
+
+/* 
+this is imported into main.js
+use in components like this:
+
+<style scoped>
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--font-family);
+}
+</style>
+*/

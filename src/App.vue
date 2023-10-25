@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="container">
     <TopNav class="top-nav"></TopNav>
-    <HomePage></HomePage>
+    <router-view></router-view>
     <BottomNav></BottomNav>
   </div>
   
@@ -10,20 +10,24 @@
 <script>
   import TopNav    from './components/nav-bars/TopNav.vue'
   import BottomNav from './components/nav-bars/BottomNav.vue'
-  import HomePage  from './components/HomePage.vue'
   
 export default {
   name: 'App',
   components: {
     TopNav,
     BottomNav,
-    HomePage,
   },
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+
+.container {
+  position: relative;
+
   .top-nav {
-    /* position: fixed; */
+    position: fixed;
   }
+}
+  
 </style>

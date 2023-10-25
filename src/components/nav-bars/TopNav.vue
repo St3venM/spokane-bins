@@ -1,17 +1,17 @@
 <template class="container">
     <header class="header">
-        <img 
-            class="logo"
-            alt="Spokane Bins logo" 
-            src="@\assets\images\logos\nav-logo-no-bg-white.png"
-        />   
+        <object 
+            class="home-icon" 
+            :data="require('@/assets/icons/home.svg')" 
+            type="image/svg+xml"
+        />
         <nav>
             <ul class="nav-links">
-                <li><a href="/">{{ HOMELINK }}</a></li>
+                <li><router-link to="/">{{ HOMELINK }}</router-link></li>
                 <li class="pipe-delimeter">|</li>
-                <li><a href="/ContactUs">{{ CONTACTLINK }}</a></li>
+                <li><router-link to="/contact-us">{{ CONTACTLINK }}</router-link></li>
                 <li class="pipe-delimeter">|</li>
-                <li><a href="/AboutUs">{{ ABOUTLINK }}</a></li>
+                <li><router-link to="/about-us">{{ ABOUTLINK }}</router-link></li>
             </ul>
         </nav>
     </header>
@@ -34,21 +34,25 @@ export default {
 
 <style scoped lang="scss">
     .header {
+        position: absolute;
+        top: 0;
+        left: 0;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         background: var(--black);
         color: var(--white);
         max-height: 90px;
-        width: auto;
+        width: 100%;
         padding: 5px;
 
-        .logo {
-            object-fit: contain;
-            max-width: 7%;
+        .home-icon {
+            width: 4em;
+            height: 4em;
+            margin: 0.5em;
         }
-        .logo:hover {
+        .home-icon:hover {
             cursor: pointer;
         }
         
